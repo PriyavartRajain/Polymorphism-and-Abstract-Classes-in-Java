@@ -37,8 +37,8 @@ public class DriverShape {
 													
 
 													
-//		Circle c1 = s1;					               Downcasting from shape to Circle
-									       // Type mismatch: cannot convert from Shape to Circle
+//		Circle c1 = s1;					         Downcasting from shape to Circle
+									 // Type mismatch: cannot convert from Shape to Circle
 		
 		Circle c1 = (Circle)s1;
 		System.out.println();
