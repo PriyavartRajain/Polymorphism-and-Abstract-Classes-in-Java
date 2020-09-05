@@ -25,19 +25,20 @@ public class DriverShape {
 		 */
 		
 		System.out.println(s1);
-		System.out.println(s1.getArea());			// We are able to access getArea because it is overriden by subclass
+		System.out.println(s1.getArea());		       // We are able to access getArea because it is overriden by subclass
 		System.out.println(s1.getPerimeter());
 		System.out.println(s1.getColor());
 		System.out.println(s1.isFilled());
 //		System.out.println(s1.getRadius());			  We can only access methods that are overriden by subclass, Circle
-													// The method getRadius() is 
-													// undefined for the type Shape, 
-													// i.e radius is not defined for generic type Shape
+									  /* The method getRadius() is 
+									     undefined for the type Shape, 
+									     i.e radius is not defined for generic type Shape
+									  */
 													
 
 													
 //		Circle c1 = s1;					               Downcasting from shape to Circle
-													// Type mismatch: cannot convert from Shape to Circle
+									       // Type mismatch: cannot convert from Shape to Circle
 		
 		Circle c1 = (Circle)s1;
 		System.out.println();
@@ -47,10 +48,10 @@ public class DriverShape {
 		System.out.println(c1.getColor());
 		System.out.println(c1.isFilled());
 		System.out.println(c1.getRadius());			// We can now access getRadius() because c1 is of type Circle
-												    // and getRadius is defined for type Circle
+								        // and getRadius is defined for type Circle
 		
 		
-		//Upcast Rectangle to Shape
+//		Upcast Rectangle to Shape
 		Shape s3 = new Rectangle(1.0,2.0,"yellow",false);			
 		System.out.println();
 		System.out.println(s3);
@@ -58,10 +59,9 @@ public class DriverShape {
 		System.out.println(s3.getPerimeter());
 		System.out.println(s3.getColor());
 //		System.out.println(s3.getLength());		       getLength() is not defined for Shape
-													// Can only access methods that are overriden by subclass, Rectangle
+								       // Can only access methods that are overriden by subclass, Rectangle
 		
 //		Downcasting from shape to rectangle
-		
 		Rectangle r1 = (Rectangle)s3;
 		System.out.println();
 		System.out.println(r1);
@@ -84,7 +84,6 @@ public class DriverShape {
   		which is a superclass of Square, 
 		Note: We can directly downcast shape to square as well
 */
-		
 		Rectangle r2 = (Rectangle)s4;			
 		System.out.println();
 		System.out.println(r2);
